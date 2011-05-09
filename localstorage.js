@@ -201,15 +201,3 @@ utils.storage = {
      }
    }
 };
-
-/** 
- * Usage example:
- *
- * var storage = utils.storage;
- * storage.init("mynamespace", true);
- * storage.save("mypersonalvar", {someindex: 'somevalue'});
- * if( storage.exists("mypersonalvar") ) {
- *  var result = JSON.parse( storage.read("mypersonalvar") );
- *  alert&#40; "someindex: " + result.someindex &#41;;
- * }
- */
