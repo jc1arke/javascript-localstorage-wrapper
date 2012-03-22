@@ -19,9 +19,9 @@ utils.storage = {
   _debug: false,
 
   /**
-   * Sorage variable indicating whether the storage engine is active or not
+   * Storage variable indicating whether the storage engine is active or not
    * Default is off. Its better to have it stored as a variable, otherwise you will end up
-   *  spamming the poor DOM Window engine with functino requests everytime and could lead to poor
+   *  spamming the poor DOM Window engine with function requests everytime and could lead to poor
    *  memory handling
    */
   _enabled: false,
@@ -99,7 +99,7 @@ utils.storage = {
         console.log('Setting value for %s', this._namespace + key);
       }
       value = JSON.stringify(value); // Store items as JSON
-      localStorage.setItem(this._namespace + key, JSON.stringify(value));
+      localStorage.setItem(this._namespace + key, value);
       return true;
     }catch( e ){
       return false;
